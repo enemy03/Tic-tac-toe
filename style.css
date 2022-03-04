@@ -62,14 +62,11 @@ body {
     transform: translate(-50%, -50%);
     width: 64px;
     height: 64px;
+    z-index: -1;
 }
 
-.boardGame .boxGame img.boxCircle {
-    opacity: 0;
-}
-
-.boardGame .boxGame img.boxCross {
-    opacity: 0;
+.boardGame .boxGame img.active {
+    z-index: 0;
 }
 
 .btnsGame {
