@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1d30;
+}
+
+.container {
+    min-width: 90%;
+    min-height: 90vh;
+    background-color: #c5cde0;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 6px #0c1224;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.container h1 {
+    font-size: 4rem;
+    text-align: center;
+    padding: 50px;
+    color: #500168;
+    text-shadow: 1px 1px 2px #1c0424;
+}
+
+.container .boardGame {
+    width: 300px;
+    height: 300px;
+    background-color: #9ca7c5;
+    box-shadow: 2px 2px 2px 5px #413e3e;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.boardGame .boxGame {
+    flex-basis: 33.3333%;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+.boardGame .boxGame img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 64px;
+    height: 64px;
+}
+
+.boardGame .boxGame img.boxCircle {
+    opacity: 0;
+}
+
+.boardGame .boxGame img.boxCross {
+    opacity: 0;
+}
+
+.btnsGame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btnsGame .optionsGame {
+    display: flex;
+    width: 280px;
+    margin: 30px 0;
+    justify-content: space-between;
+}
+
+.btnsGame .optionsGame img {
+    width: 64px;
+    height: 64px;
+}
+
+.optionsGame .circle,
+.optionsGame .cross {
+    cursor: pointer;
+}
+
+.btnsGame .wrap_btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.btnsGame button {
+    width: 60%;
+    padding: 12px;
+    margin: 5px;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    border: none;
+    border-radius: 10px;
+}
+
+.btnsGame button.startGame {
+    background-color: #c2b7e5;
+}
+
+.btnsGame button.reset {
+    background-color: #4d919f;
+}
+
+@media (min-width:768px) {
+    .container {
+        min-width: 80%;
+        min-height: 80vh;
+    }
+
+    .container h1 {
+        font-size: 5rem;
+    }
+
+    .container .boardGame {
+        width: 350px;
+        height: 350px;
+    }
+
+    .btnsGame .optionsGame {
+        width: 320px;
+    }
+
+    .btnsGame button {
+        padding: 16px;
+        font-size: 1.7rem;
+    }
+
+}
+
+@media (min-width:992px) {
+    .container {
+        min-width: 70%;
+        min-height: 70vh;
+    }
+
+    .container h1 {
+        font-size: 5.5rem;
+        padding: 30px;
+    }
+
+    .container .boardGame {
+        width: 400px;
+        height: 400px;
+    }
+
+    .boardGame .boxGame img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .btnsGame .optionsGame {
+        width: 370px;
+    }
+
+    .btnsGame .optionsGame img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .btnsGame .wrap_btns {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .btnsGame button {
+        padding: 16px;
+        font-size: 1.7rem;
+
+    }
+
+
+
+}
+
+@media (min-width:1200px) {
+    .container {
+        min-width: 50%;
+        min-height: 60vh;
+    }
+
+}
+
+@media (min-width:1400px) {
+    .container {
+        min-width: 40%;
+        min-height: 80vh;
+    }
+
+}
